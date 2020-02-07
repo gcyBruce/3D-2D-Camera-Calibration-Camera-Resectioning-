@@ -12,7 +12,9 @@ Use the suggested right-hand coordinate system shown in the diagram above and ch
 Store the XYZ coordinates in a file so that you can load the data into Matlab (using the load function) and use them again and again. Note that each image can be calibrated independently. So you can choose different calibration points to calibrate each image. Neither do the numbers of calibration points need to be the same for your chosen images.
 
 The uv coordinates can be obtained using the MATLAB function ginput. If one invokes ginput as follows:
->> uv = ginput(12) % e.g., to digitise 12 points in the image and digitises a series of points by clicking with the left mouse button, then uv will be a matrix containing the column and row coordinates of the points that you digitised.
+>> uv = ginput(12) % e.g.,to digitise 12 points in the image 
+
+and digitises a series of points by clicking with the left mouse button, then uv will be a matrix containing the column and row coordinates of the points that you digitised.
 After the above operation, the variable uv should be a 12 × 2 matrix, each row of which should contain the coordinates of one image point.
 
 You need to ensure that, for each image, the numbers of 3D and 2D calibration points are the same. Thus, if your uv variable is a 12 × 2 matrix, then your XYZ variable should be a 12 × 3 matrix. Also, the points should appear in the same order in the two matrices.
