@@ -1,4 +1,4 @@
-# 3D-2D-Camera-Calibration-Camera-Resectioning-
+# 3D-2D-Camera-Calibration-Camera-Resectioning
 
 (Acknowledgement: This task material is courtesy of Professor. Du Huynh of UWA).
 Camera calibration involves finding the geometric relationship between 3D world coordinates and their 2D projected positions in the image.
